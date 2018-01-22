@@ -86,6 +86,9 @@ public:
     // since last call to this function
     bool MapChanged();
 
+    // Returns true if the system is currently running global BA.
+    bool IsRunningGBA();
+
     // Reset the system (clear map)
     void Reset();
 

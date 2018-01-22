@@ -292,6 +292,10 @@ bool System::MapChanged()
         return false;
 }
 
+    bool System::IsRunningGBA() {
+        return mpLoopCloser->isRunningGBA();
+    }
+
 void System::Reset()
 {
     unique_lock<mutex> lock(mMutexReset);
