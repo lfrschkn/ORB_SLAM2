@@ -185,7 +185,7 @@ ORB_SLAM2_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;
 ORB_SLAM2_SOURCE_DIR:STATIC=/home/lukas/polybox/Master_Thesis/src_master_thesis/ORB_SLAM2
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/opt/ros/kinetic/share/OpenCV-3.2.0-dev
+OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for Pangolin.
 Pangolin_DIR:PATH=/home/lukas/polybox/Master_Thesis/src_master_thesis/Pangolin/build/src
