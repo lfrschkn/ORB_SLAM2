@@ -89,6 +89,12 @@ public:
     // Returns true if the system is currently running global BA.
     bool IsRunningGBA();
 
+    // Returns true if loop was detected and while essential graph and gba is running
+    bool IsRunningLoopClosing();
+
+    // Returns true if system is currently running essential graph optimization
+    bool IsRunningEssentialGraphOptimization();
+
     // Reset the system (clear map)
     void Reset();
 

@@ -80,6 +80,13 @@ public:
 
     bool isFinished();
 
+    bool isRunningLoopClosing(){
+        return inLoopClosing;
+    }
+    bool isRunningEssentialGraphOptimization(){
+        return inEssentialGraphOptimization;
+    }
+
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
 protected:
@@ -138,6 +145,10 @@ protected:
     bool mbStopGBA;
     std::mutex mMutexGBA;
     std::thread* mpThreadGBA;
+
+    //Variables related to Loop Closing
+    bool inLoopClosing;
+    bool inEssentialGraphOptimization;
 
     // Fix scale in the stereo/RGB-D case
     bool mbFixScale;

@@ -292,9 +292,21 @@ bool System::MapChanged()
         return false;
 }
 
+    // report on loop closing
+
     bool System::IsRunningGBA() {
         return mpLoopCloser->isRunningGBA();
     }
+
+
+    bool System::IsRunningLoopClosing() {
+        return mpLoopCloser->isRunningLoopClosing();
+    }
+
+    bool System::IsRunningEssentialGraphOptimization() {
+        return mpLoopCloser->isRunningEssentialGraphOptimization();
+    }
+
 
 void System::Reset()
 {
